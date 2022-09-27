@@ -7,22 +7,30 @@ class Test
 
     public function add($a,$b)  
     {
-        return $a + $b;
+        $this->num_a = $a;
+        $this->num_b = $b;
+        return $this->num_a + $this->num_b;
     }
 
     public function sub($a,$b)  
     {
-        return $a - $b;
+        $this->num_a = $a;
+        $this->num_b = $b;
+        return $this->num_a - $this->num_b;
     }
 
     public function mul($a,$b)  
     {
-        return $a * $b;
+        $this->num_a = $a;
+        $this->num_b = $b;
+        return $this->num_a * $this->num_b;
     }
 
     public function div($a,$b)  
     {
-        return $a / $b;
+        $this->num_a = $a;
+        $this->num_b = $b;
+        return $this->num_a / $this->num_b;
     }
 }
 
