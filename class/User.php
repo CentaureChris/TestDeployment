@@ -19,11 +19,15 @@ class User
     }
 
     
-    public function isValid(User $user)
+    public function isValid()
     {
-        if(isset($user->nom) && isset($user->prenom) && isset($user->email) && isset($user->age))
+        if(isset($this->nom) && isset($this->prenom) && isset($this->email) && isset($this->age))
         {
-            return true;
+            if(filter_var($this->getEmail(),FILTER_VALIDATE_EMAIL)){
+                return true;
+            }else{
+                return false;
+            }
         }
     }
 
@@ -33,5 +37,13 @@ class User
     public function getAge()
     {
         return $this->age;
+    }
+
+    /**
+     * Get the value of email
+     */ 
+    public function getEmail()
+    {
+        return $this->email;
     }
 }
