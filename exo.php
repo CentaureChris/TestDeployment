@@ -1,8 +1,8 @@
 <?php
-    require('./TestClass.php');
 
-    $test = new Test();
+use App\Calculator;
 
-    $add = $test->add(1,2);
-    print $add;
-   
+$calc = new Calculator();
+
+$add = $calc->add(1,2);
+print $add.'<br/>';

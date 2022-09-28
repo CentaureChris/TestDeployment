@@ -1,6 +1,7 @@
 <?php
+namespace App;
 
-class Test 
+class Calculator 
 {
     private $num_a;
     private $num_b;
@@ -33,6 +34,7 @@ class Test
         return $this->num_a / $this->num_b;
     }
 }
+
 
 
 ?>
