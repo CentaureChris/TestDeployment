@@ -1,4 +1,6 @@
 {
+    "name": "chris/testdeployment-app",
+    "description": "no description",
     "require": {
         "phpunit/phpunit": "^10.1"
     },
