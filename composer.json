@@ -1,6 +1,7 @@
 {
     "name": "chris/testdeployment-app",
     "description": "no description",
+    "license": "proprietary",
     "require": {
         "phpunit/phpunit": "^10.1"
     },
